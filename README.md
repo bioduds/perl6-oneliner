@@ -18,10 +18,10 @@ MINIMAL REQUIREMENTS FOR INSTALLATION
 
 ATTENTION
 
-1. You need gcc compiler installed in order to proceed. In Ubuntu, for instance, run:
+. You need gcc compiler installed in order to proceed. In Ubuntu, for instance, run:
 
 sudo apt-get install build-essential
 
 before installation
 
-2. Perl6 needs a Perl5 version 5.10.1 or above to be already installed on your system
+. Perl6 needs a Perl5 version 5.10.1 or above to be already installed on your system
