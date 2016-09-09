@@ -23,7 +23,7 @@ run_install () {
 # test if make and perl are runnable
 command -v perl >/dev/null 2>&1 || { echo >&2 "perl is required to install Perl6 (Min. version 5.10.1). Please install it and try again."; exit 1; }
 command -v make >/dev/null 2>&1 || { echo >&2 "make command is required to install Perl6. Please install it and try again."; exit 1; }
-rm -rf ~/rakudo
+test -e ~/rakudo && { echo >&2 "There is already a rakudo directory in your home directory. Please move out of the way and try again."; exit 1; }
 mkdir ~/rakudo && cd ~/rakudo
 curl -O http://rakudo.org/downloads/star/rakudo-star-2016.07.tar.gz
 tar -xzf rakudo-star-2016.07.tar.gz
