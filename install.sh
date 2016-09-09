@@ -35,6 +35,16 @@ make
 #make rakudo-spectest
 make install
 echo "export PATH=$HOME/rakudo/rakudo-star-2016.07/install/bin:$HOME/rakudo/rakudo-star-2016.07/install/share/perl6/site/bin:$PATH" > ~/rakudo/setpath.sh
-grep -q rakudo/setpath.sh ~/.bashrc || echo ". ~/rakudo/setpath.sh" >> ~/.bashrc
+if [ -f ~/.bashrc ]
+then
+     BASHRC=~/.bashrc
+elif [ -f ~/.bash_profile ]
+then
+      BASHRC=~/.bash_profile
+fi
+if [ -n "$BASHRC" ]
+then
+     grep -q rakudo/setpath.sh $BASHRC || echo ". ~/rakudo/setpath.sh" >> $BASHRC
+fi
 }
 run_install
