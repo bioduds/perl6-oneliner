@@ -5,7 +5,7 @@
 
 # THIS INSTALL SCRIPT IS MADE FOR LINUX AND MAC ONLY
 # Open terminal and type:
-# curl https://install.perl6.org/ | sh;. ~/rakudo/setpath.sh
+# curl https://raw.githubusercontent.com/bioduds/perl6-oneliner/master/install.sh | sh;. ~/rakudo/setpath.sh
 
 # MINIMAL REQUIREMENTS FOR INSTALLATION
 # 2GB RAM or 1GB RAM + 1024MB swap
