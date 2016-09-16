@@ -44,7 +44,7 @@ then
 fi
 if [ -n "$BASHRC" ]
 then
-     grep -q rakudo/setpath.sh $BASHRC || echo ". ~/rakudo/setpath.sh" >> $BASHRC
+     grep -q rakudo/setpath.sh $BASHRC || echo "source ~/rakudo/setpath.sh" >> $BASHRC
 fi
 }
 run_install
